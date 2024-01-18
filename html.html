@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="icon" href="images/websiteicon.ico" type="image/x-icon"/>
+    <link rel="stylesheet" href="main.css">
+    <title>Dramagic</title>
+</head>
+<body>
+
+    <header>
+        <a  href="#Dramagic" class="logo">Dramagic</a>
+        <nav class="navigation">
+            <a href="#AboutMe">About us</a>
+            <a href="#Games">pricing</a>
+            <a href="signup.html">Contact us</a>
+            <a href="indexAR.html">عربي</a>
+        </nav>
+        <button class="hamburger">
+            <div class="bar"></div>
+
+        </button>
+
+    </header>
+
+    <nav class="mobile-nav">
+        <a href="#AboutMe" class="mobile-navB">About us</a>
+        <a href="#Games" class="mobile-navB">pricing</a>
+        <a href="signup.html" class="mobile-navB">Contact us</a>
+        <a href="indexAR.html" class="mobile-navB">عربي</a>
+    </nav>
+
+
+    <section class="main" id="Sop">
+        <div>
+            <h2>Welcome to <br><span>Dramagic Website</span></h2>
+            <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas, sed rem, non,</h3>
+            <a href="#AboutMe" class="main-btn">Who we are ? </a>
+            <div class="social-icons">
+                <a target="_blank" href="https://www.tiktok.com/@sdev" class="Icon"><i class="fa-brands fa-tiktok"></i></a>
+                <a target="_blank" href="https://www.instagram.cop.dev/" class="Icon"><i class="fa-brands fa-instagram"></i></a>
+                <a target="_blank" href="https://discord.gg/7zcaPpJb" class="Icon"><i class="fa-brands fa-discord"></i></a>
+                <a target="_blank" href="https://www.youtube.coSop_dev" class="Icon"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="AboutMe" id="AboutMe">
+        <h2 class="title">About us</h2>
+
+        <p class="aboutMe-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet voluptates earum sit 
+            facere magni laboriosam veniam aliquam, tenetur quis quidem, cum ducimus
+             sint architecto illo accusantium, sequi minus! Quide : <a target="_blank" href="https://www.youtube.com/channel/UCu-n5NrJqQRhR5daNquqlZw">dramagic</a>
+
+    </section>
+
+
+   
+
+    <section class="Contact" id="Contact">
+
+        <h2 class="title"> Let's Collaborate </h2>
+
+        <div class="content">
+            <div class="C-Card">
+                <div class="gameInfo">
+                    <strong class="Contact-title">
+                        <span>dramagic@gmail.com</span>
+                    </strong>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <footer class="footer">
+        <p class="footer-title">Copyrights @ <span>omarmohamedomars12@gmail.com</span></p>
+        <div class="social-icons">
+            <a target="_blank" href="https://www.youtube.com/Sop_dev" class="Icon"><i class="fa-brands fa-youtube"></i></a>
+            <a target="_blank" href="https://www.tiktokom/@sop.dev" class="Icon"><i class="fa-brands fa-tiktok"></i></a>
+            <a target="_blank" href="https://www.inagram.com/sop.dev/" class="Icon"><i class="fa-brands fa-instagram"></i></a>
+            <a target="_blank" href="https://discord.gg/7zPjtpJb" class="Icon"><i class="fa-brands fa-discord"></i></a>
+
+        </div>
+
+    </footer>
+
+
+    <script>
+
+        const menu_btn = document.querySelector('.hamburger');
+        const mobile_menu = document.querySelector('.mobile-nav');
+
+
+
+        menu_btn.addEventListener('click', function () {
+            menu_btn.classList.toggle('is-active')
+            mobile_menu.classList.toggle('is-active')
+        })
+
+        document.querySelectorAll('.mobile-navB').forEach(item => {
+            item.addEventListener('click', event => {
+                menu_btn.classList.toggle('is-active')
+                mobile_menu.classList.toggle('is-active')
+            })
+        })
+
+    </script>
+</body>
+</html>
